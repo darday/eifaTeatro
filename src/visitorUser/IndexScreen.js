@@ -1,11 +1,11 @@
 import React from 'react'
-import { NavBarScreen } from './navBar/NavBarScreen'
+import { CarouselScreen } from './carousel/CarouselScreen'
 
 export const IndexScreen = () => {
   return (
     <>
-        <NavBarScreen/>
-        <div>IndexScreen</div>
+        <CarouselScreen/>
+        <div><h1>IndexScreen</h1></div>
     </>
   )
 }

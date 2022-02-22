@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: 'Montserrat', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +12,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-nav li{
+  font-weight: 549;
+  letter-spacing: 0.1rem;
+}
+
+/* Carousel */
+
+.carousel-item {
+  /* width: 100%; */
+  height: 148vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: rgba(0, 0, 0, 0.356);
+  /* background-color: red; */
+}
+
+.carousel-indicators li {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+}
+.carousel-indicators {
+  /* top: -10vh; */
+  padding-top: -20 !important;
+}
+
+/* FIN Carousel */
+
+.navbar{
+  background-color: hsla(0, 0%, 100%, 0) !important;
+}
+
+
+/* FinCarousel */
