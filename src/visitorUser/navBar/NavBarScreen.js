@@ -2,8 +2,9 @@ import React from 'react'
 
 export const NavBarScreen = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{height:'100vh'}}>
          <a className="navbar-brand" href="#">
+         <img src= { `./assets/img/QS.png` } width="30" height="30" alt="foto"></img>
             <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""></img>
         </a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
