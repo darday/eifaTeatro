@@ -1,11 +1,11 @@
 import React from 'react'
-import { CarouselScreen } from './carousel/CarouselScreen'
+import { CarouselScreen2 } from './carousel/CarouselScreen2'
 import { Footer } from './Footer/FooterScreen'
 
 export const TeatroMusicalScreen = () => {
   return (
 <div>
-    <CarouselScreen/>
+    <CarouselScreen2/>
     <div style={{ backgroundColor: '#4d5480' }}>
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '15vh' }}>
           <div className='col-sm-12'>

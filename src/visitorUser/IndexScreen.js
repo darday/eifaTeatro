@@ -2,6 +2,7 @@ import React from 'react'
 import { CarouselScreen } from './carousel/CarouselScreen'
 import { NavBarScreen } from './navBar/NavBarScreen'
 import { Footer } from './Footer/FooterScreen'
+import { MapsScreen } from './Maps/MapsScreen'
 
 
 export const IndexScreen = () => {
@@ -98,7 +99,7 @@ export const IndexScreen = () => {
         <div className='row'>
           <div className='col-12 col-sm-6'>
             <h1 className='titulos-grandes' style={{ color:'#4d5480' }}>UBICACIÓN</h1>
-            MAP AQUI 
+              {/* <MapsScreen/>  */}
           </div>
           <div className='col-12 col-sm-6'>
             <h1 className='titulos-grandes' style={{ color:'#4d5480' }}>CONTACTOS</h1>

@@ -44,15 +44,20 @@ export const EifaKidsScreen = () => {
         </div>
       </div>
       
-        <div className='row'>
-          <div className='col-sm-4'>
-            <img src= { `./assets/img/Ek5.png` } width= "100%" height= "auto" ></img>
+    
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <img src= { `./assets/img/Ek5.png` } className="card-img-top" alt="..."></img>
+           
           </div>
-          <div className='col-sm-4'>
-            <img src= { `./assets/img/Ek6.png` } width= "100%" height= "auto" ></img>
+          <div className="card" style={{border:'0'}}>
+            <img src= { `./assets/img/Ek6.png` } className="card-img-top" alt="..."></img>
+            
           </div>
-          <div className='col-sm-4'>
-              <img src= { `./assets/img/Ek7.png` } width= "100%" height= "auto" ></img>
+          <div className="card" style={{border:'0'}}>
+            <img src= { `./assets/img/Ek7.png` } className="card-img-top" alt="..."></img>
+           
           </div>
         </div>
 

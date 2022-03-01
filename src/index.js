@@ -5,9 +5,7 @@ import { EifaTeatroApp } from './EifaTeatroApp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <EifaTeatroApp />
-  </React.StrictMode>,
+    <EifaTeatroApp /> ,
   document.getElementById('root')
 );
 
