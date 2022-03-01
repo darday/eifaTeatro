@@ -42,16 +42,21 @@ export const NavBarScreen = () => {
                 <img src={"./assets/logos/Sello-EIFA.png"} width="97vw" height="auto" alt=""></img>
               </div>
             </li>
+            <Link to={"/eifa-kids"}  style={{ textDecoration: 'none' }}>
             <li className="nav-item active flex-wrap">
               <div className="nav-link p-4" href="#">EIFA KIDS</div>
             </li>
+            </Link>
+            <Link to={"/casas"}  style={{ textDecoration: 'none' }}>
             <li className="nav-item active flex-wrap">
               <div className="nav-link p-4" href="#">CASAS</div>
             </li>
+            </Link>
+            <Link to={"/contacto"}  style={{ textDecoration: 'none' }}>
             <li className="nav-item active flex-wrap">
               <div className="nav-link p-4" href="#">CONTACTO</div>
             </li>
-            
+            </Link>
           </ul>
         </div>
       </div>
