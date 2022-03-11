@@ -1,10 +1,14 @@
 import React from 'react'
 import { CarouselScreen4 } from './carousel/CarouselScreen4'
 import { Footer } from './Footer/FooterScreen'
+import { NavBarScreen } from './navBar/NavBarScreen';
 
 export const CasasScreen = () => {
+  localStorage.removeItem("menu");
+  window.localStorage.setItem("menu",4);
   return (
     <div>
+      <NavBarScreen/>
       <CarouselScreen4/>
 
       <div style={{ backgroundColor: '#535353', paddingTop: '10vh', paddingBottom: '10vh' }}>

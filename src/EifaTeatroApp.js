@@ -11,7 +11,7 @@ export const EifaTeatroApp = () => {
   return (
     <>
       <BrowserRouter>
-        <NavBarScreen/>
+      
         <Routes>
           <Route path="/" element={<IndexScreen/>} />
           <Route path="/teatro-musical" element={<TeatroMusicalScreen/>} />

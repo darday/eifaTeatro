@@ -85,6 +85,51 @@ p {
 }
 
 /* FinCarousel */
+
+/* cuando el usuario está sobre un enlace */
+a:hover.sobre-enlace { 
+  background: rgba(37, 46, 121, 0.205); 
+  
+  border-radius: 5rem;
+}  /* El usuario esta sobre el enlace */
+/* Color Seleccionado */
+.color-seleccionado{
+  color:#ee833b !important
+}
+/* Color Seleccionado */
+/* .mostrar-ocultar{
+ 
+} */
+
+@media only screen and (max-width: 1024px) {
+  .mostrar-ocultar {
+    display: none !important;
+  }  
+}
+
+@media only screen and (max-width: 767px) {
+  .mostrar-ocultar {
+    display: inline !important;
+  }  
+}
+
+/* img 100 grande */
+@media only screen and (min-width: 768px) {
+  .imagen-con-tamanio{
+    width:40% !important;
+  }
+ 
+}
+
+
+@media only screen and (max-width: 767px) {
+  .imagen-con-tamanio{
+    width:70% !important;
+  }
+ 
+}
+
+/* cuando el usuario está sobre un enlace */
 .contenedor {
   position: relative;
   display: inline-block;
@@ -99,5 +144,5 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5rem;
+  font-size: 2.5vw;
 }

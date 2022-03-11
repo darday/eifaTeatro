@@ -1,11 +1,16 @@
 import React from 'react'
-import { CarouselScreen } from './carousel/CarouselScreen'
+import { CarouselScreen3 } from './carousel/CarouselScreen3'
 import { Footer } from './Footer/FooterScreen'
+import { NavBarScreen } from './navBar/NavBarScreen';
 
 export const EifaKidsScreen = () => {
+  
+  localStorage.removeItem("menu");
+  window.localStorage.setItem("menu",3);
   return (
     <div>
-      <CarouselScreen/>
+      <NavBarScreen/>
+      <CarouselScreen3/>
 
       <div style={{ backgroundColor: '#4d5480' }}>
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh' }}>
@@ -40,7 +45,7 @@ export const EifaKidsScreen = () => {
       <div className="contenedor">
         <img src= { `./assets/img/Matriculas7.png` } width="100%" height= 'auto'></img>
         <div className="centrado" >
-        <b style={{ fontSize: '1.5rem' }}>EL ARTE FORTALECE LA INTELIGENCIA EMOCIONAL</b>
+        <b style={{ fontSize: '2.5vw' }}>EL ARTE <i style={{fontWeight: 'bold'}}>FORTALECE</i> LA INTELIGENCIA EMOCIONAL</b>
         </div>
       </div>
       

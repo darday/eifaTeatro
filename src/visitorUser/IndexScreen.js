@@ -6,14 +6,17 @@ import { MapsScreen } from './Maps/MapsScreen'
 
 
 export const IndexScreen = () => {
+  localStorage.removeItem("menu");
+  window.localStorage.setItem("menu",1);
   return (
     <>
+      <NavBarScreen/>
       <CarouselScreen/>
       <div style={{ backgroundColor: 'rgb(77 84 128)', paddingBottom: '4vh' }}>
         <div className='container'> 
           <div style={{ paddingBottom: '4vh' }}> 
             <div className='row'>
-              <div className='col-12 col-sm-6'>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
                 <img src= { `./assets/img/QS2.png` } width="100%"></img> 
                 <h3 style={{ textAlign: 'justify', color: '#e8eaed'}}>¿Quiénes somos?</h3> 
                 <p style={{ textAlign: 'justify', color: '#e8eaed', paddingTop: '2vh'}}>EIFA es una Escuela Integral de Formación de Artistas que trabaja para aportar al medio
@@ -28,7 +31,7 @@ export const IndexScreen = () => {
                   campo artístico y cultural en el contexto nacional e internacional.
                 </p>   
               </div>
-              <div className='col-12 col-sm-6'>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
                 <img src= { `./assets/img/QS.png` } width="100%" height= 'auto'></img>
               </div>
             </div>               
@@ -62,7 +65,7 @@ export const IndexScreen = () => {
       <div style={{ backgroundColor: '#e77825' }}> 
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', padding:'5vh'}}>
-            <div className='col-12 col-sm-6'>
+            <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
              <center><img src= { `./assets/img/Mary.png` } width= "85%" height= "auto" ></img></center>                
               <br></br>
               <h1 className='titulos-grandes' style={{color: '#e8eaed' }}>DIRECTORA</h1>
@@ -72,7 +75,7 @@ export const IndexScreen = () => {
                 Profesora en Educación Primaria y Doctora en Ciencias de la Educación. Tiene una trayectoria de treinta y cuatro años de experiencia en Administración y Dirección Educativa, Docencia
                 Universitaria, Educación Básica y Educación Inicial. </p>                     
             </div>
-            <div className='col-12 col-sm-6' >
+            <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
               <p style={{ textAlign: 'justify', paddingTop: '4vh', color: '#e8eaed'}}>Se ha capacitado a través de varios cursos,
                 seminarios y talleres para ejercer habilidades de planificación, manejo de grupos humanos,
                 resolución de conflictos, liderazgo, desarrollo del pensamiento crítico y educación ambiental. Se
@@ -97,11 +100,12 @@ export const IndexScreen = () => {
 
       <div className='container' style={{ paddingTop: '10vh', paddingBottom: '10vh' }}>
         <div className='row'>
-          <div className='col-12 col-sm-6'>
+          <div className='col-12 col-sm-6' style={{paddingBottom:'5vh'}}>
             <h1 className='titulos-grandes' style={{ color:'#4d5480' }}>UBICACIÓN</h1>
-              {/* <MapsScreen/>  */}
+              <MapsScreen/> 
           </div>
           <div className='col-12 col-sm-6'>
+            
             <h1 className='titulos-grandes' style={{ color:'#4d5480' }}>CONTACTOS</h1>
             <div style={{ textAlign: 'justify', paddingTop: '5vh', paddingBottom: '3vh', color: '#666666', fontSize: '1.1rem' }}>
               Estamos ubicados en las calles Rafael León y Jonás Guerrero (esquina), sector González Suárez, a 
@@ -111,7 +115,7 @@ export const IndexScreen = () => {
               <b>Whatsapp:</b> 099 891 7202 
             </div>
             <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1.1rem' }}>
-              <b>Link directo:</b> <a href= 'https://wa.link/3h7nxd'>https://wa.link/3h7nxd</a> 
+              <b>Link directo:</b> <a href= 'https://wa.link/3h7nxd' target="_blank">Click Aquí!</a> 
             </div>
             <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1.1rem' }}>
               <b>Facebook:</b> Escuela Integral de Formación de Artistas-EIFA 

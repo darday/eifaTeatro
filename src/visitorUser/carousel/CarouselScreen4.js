@@ -2,7 +2,7 @@ import React from 'react'
 
 export const CarouselScreen4 = () => {
   return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" className="carousel slide animate__animated animate__fadeIn" data-ride="carousel">
         
         <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="2000"  style={{backgroundImage:`url('./assets/carrousel4/1.png')`}}>                

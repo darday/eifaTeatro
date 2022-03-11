@@ -1,16 +1,22 @@
 import React from 'react'
 import { CarouselScreen2 } from './carousel/CarouselScreen2'
 import { Footer } from './Footer/FooterScreen'
+import { NavBarScreen } from './navBar/NavBarScreen'
+import pdf from './PERFIL_ESTUDIANTE_EIFA.pdf'
+import PlanEstudio from './PLAN_ESTUDIOS_EIFA 2022.pdf'
 
 export const TeatroMusicalScreen = () => {
+  localStorage.removeItem("menu");
+  window.localStorage.setItem("menu",2);
   return (
 <div>
+    <NavBarScreen/>
     <CarouselScreen2/>
     <div style={{ backgroundColor: '#4d5480' }}>
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '15vh' }}>
           <div className='col-sm-12'>
             <center>
-              <img src= { `./assets/img/Matriculas1.png` } width="30%" height= 'auto' style={{ paddingTop: '5vh' }}></img>
+              <img src= { `./assets/img/Matriculas1.png` } className="imagen-con-tamanio"  style={{ paddingTop: '5vh' }}></img>
               <h2 style={{ paddingTop: '5vh', textAlign: 'center', fontSize: '2rem', color: '#eeede9', fontWeight:'900' }}>MODALIDAD PRESENCIAL</h2>
             </center>
             <div className='row'>
@@ -29,7 +35,7 @@ export const TeatroMusicalScreen = () => {
     </div>
 
       
-        <div className="contenedor">
+        <div className="contenedor" >
           <img src= { `./assets/img/Matriculas7.png` } width="100%" height= 'auto'></img>
           <div className="centrado" >
             NO NECESITAS EXPERIENCIA PREVIA, PERO SI MUCHA <i style={{fontWeight: 'bold'}}>DIDSCIPLINA, DEDICACIÓN Y AMOR</i> POR EL ARTE
@@ -58,25 +64,31 @@ export const TeatroMusicalScreen = () => {
         <div>
           <img src= { `./assets/img/banner-conviertete-en-el-protagonista-con-frase.png` } width="100%" height= 'auto'></img>
         </div>
-        
+    {/* pdfs */}
+    
         <div className='container' style={{ paddingTop: '10vh', paddingBottom: '10vh' }}>
           <div className='row'>
+        
+            
             <div className='col-12 col-sm-6' >
-              <center><img src= { `./assets/img/Matriculas11.png` } width= '80%' height= 'auto'></img></center>
+              <a href={PlanEstudio} target="_blank">
+                <center><img src= { `./assets/img/Matriculas11.png` } width= '80%' height= 'auto'></img></center>
+              </a>
             </div>
             <div className='col-12 col-sm-6'>
-              <img src= { `./assets/img/Matriculas12.png` } width= '100%' height= 'auto'></img>
+              <a href={pdf} target="_blank">
+                <img src= { `./assets/img/Matriculas12.png` } width= '100%' height= 'auto'></img>
+              </a>
             </div>
           </div>
         </div>
-
         <div style={{ backgroundColor: '#6f8839', paddingTop: '10vh', paddingBottom: '10vh' }}>
           <div className='container'>
             <div className='row'>
-              <div className='col-12 col-sm-6'>
-                <center><img src= { `./assets/img/icono-graduado.png` } width= '35%' height= 'auto'></img></center>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+                  <center><img src= { `./assets/img/icono-graduado.png` } width= '35%' height= 'auto'></img></center>
               </div>
-              <div className='col-12 col-sm-6'>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{padding:"8vh"}}>
                 <h3 style={{ paddingBottom: '2vh', color: '#ffffff', fontWeight: 'bold', textAlign: 'center', fontSize: '1.5rem' }}>TÍTULO QUE OBTIENES</h3>
                 <div style={{ paddingBottom: '2vh', color: '#ffffff', textAlign: 'justify', fontSize: '1.5rem' }}>Acreditación <b style={{color:'white'}}>ARTISTA PROFESIONAL
                   </b> mención Teatro Musical CANTO, DANZA Y ACTUACIÓN.</div>
@@ -88,7 +100,9 @@ export const TeatroMusicalScreen = () => {
 
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh' }}>
           <center><div style={{ color: '#1e3687', fontSize: '1.5rem', fontWeight: 'bold' }}>¿DESEAS INSCRIBIRTE?</div></center>
-          <center><img src= { `./assets/img/Matriculas13.png` } width= '35%' height= 'auto' style={{ paddingTop: '2vh' }}></img></center>
+          <a href="https://wa.link/3h7nxd" target="_blank">
+            <center><img src= { `./assets/img/Matriculas13.png` } width= '35%' height= 'auto' style={{ paddingTop: '2vh' }}></img></center>
+          </a>
         </div>
       <Footer/>
 </div>
