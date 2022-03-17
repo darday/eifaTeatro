@@ -56,7 +56,8 @@ export const NavBarScreen = () => {
 
     
   return (
-    <nav className={`navbar navbar-expand-md navbar-light  center-text ${show ? 'bg-light fixed-top':'bg-dark fixed-top navbar2'}  justify-content-center animate__animated animate__fadeInDown `}>
+    // <nav className={`navbar navbar-expand-md navbar-light  center-text ${show ? 'bg-light fixed-top':'bg-dark fixed-top navbar2'}  justify-content-center animate__animated animate__fadeInDown `}>
+    <nav className={`navbar navbar-expand-md navbar-light  center-text ${show ? 'bg-light fixed-top':'bg-dark fixed-top navbar2'} navbar2 justify-content-center animate__animated animate__fadeInDown `}>
       <div className='row justify-content-center d-flex align-items-center'>
         <div className="mostrar-ocultar">
           <div className="navbar-brand" href="#">
@@ -105,7 +106,7 @@ export const NavBarScreen = () => {
             <a href={"/"} className="sobre-enlace"> 
               <li className="nav-item active flex-wrap">
                 <div className="nav-link pr-4 pl-4 " href="#" onClick={()=>menuSeleccionado(1)}>
-                  <img src={"./assets/logos/Sello-EIFA.png"} width="97vw" height="auto" alt=""></img>
+                  <img src={"./assets/logos/Sello-EIFA.png"} width="75vw" height="auto" alt=""></img>
                 </div>
               </li>
             </a>

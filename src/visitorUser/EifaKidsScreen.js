@@ -14,12 +14,12 @@ export const EifaKidsScreen = () => {
 
       <div style={{ backgroundColor: '#4d5480' }}>
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh' }}>
-          <center><i style={{ fontStyle: 'normal', fontSize: '2rem', color: '#ffb357', fontWeight: 'bold' }}>
+          <center><i style={{ fontStyle: 'normal', fontSize: '1rem', color: '#ffb357', fontWeight: 'bold' }}>
           EIFA KIDS <i style={{ fontStyle: 'normal' }}>es un programa donde su niño/a puede estudiar para ser</i>
           <i style={{ fontStyle: 'normal' }}> ARTISTA JUNIOR</i><i style={{ fontStyle: 'normal' }}> mención Teatro Musical.</i>
           </i></center>
-          <div style={{ paddingTop: '8vh' }}>
-            <center><i style={{ fontStyle: 'normal', fontSize: '1.8rem', color: '#ffb357', fontWeight: 'bold' }}>
+          <div style={{ paddingTop: '3vh' }}>
+            <center><i style={{ fontStyle: 'normal', fontSize: '1rem', color: '#ffb357', fontWeight: 'bold' }}>
             TOMARÁ CLASES DE CANTO, DANZA Y ACTUACIÓN, ENTRE OTRAS ÁREAS.</i></center>
           </div>
         

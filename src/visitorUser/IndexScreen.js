@@ -12,13 +12,13 @@ export const IndexScreen = () => {
     <>
       <NavBarScreen/>
       <CarouselScreen/>
-      <div style={{ backgroundColor: 'rgb(77 84 128)', paddingBottom: '4vh' }}>
+      <div style={{ backgroundColor: 'rgb(77 84 128)',paddingBottom: '4vh' }}>
         <div className='container'> 
           <div style={{ paddingBottom: '4vh' }}> 
-            <div className='row'>
-              <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+            <div className='row'style={{ paddingTop: '7vh'}}>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
                 <img src= { `./assets/img/QS2.png` } width="100%"></img> 
-                <h3 style={{ textAlign: 'justify', color: '#e8eaed'}}>¿Quiénes somos?</h3> 
+                <h5 style={{ textAlign: 'justify', color: '#e8eaed', paddingTop:"2vh"}}>¿Quiénes somos?</h5> 
                 <p style={{ textAlign: 'justify', color: '#e8eaed', paddingTop: '2vh'}}>EIFA es una Escuela Integral de Formación de Artistas que trabaja para aportar al medio
                   cultural ecuatoriano con <b style={{color:'white'}}>profesionales</b> que desarrollen su talento creativo, escénico y musical,
                   liderando la gestión, participación y producción de sus propios proyectos, de manera ética y
@@ -32,7 +32,7 @@ export const IndexScreen = () => {
                 </p>   
               </div>
               <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-                <img src= { `./assets/img/QS.png` } width="100%" height= 'auto'></img>
+                <img className="espacio-img-index" src= { `./assets/img/QS.png` } width="100%" height= 'auto' ></img>
               </div>
             </div>               
           </div>
@@ -42,17 +42,17 @@ export const IndexScreen = () => {
       <div>
         <div className='container'>
           <div style={{ paddingBottom: '15vh' }}>
-            <div className='row'>
+            <div className='row' style={{ paddingTop: '7vh'}}>
               <div className='col-12 col-sm-6'>
-                <h1 className='titulos-grandes' style={{ textAlign: 'center', fontSize: '60px', paddingTop: '10vh', color:'#4d5480' }}>MISIÓN</h1>
-                <p style={{ textAlign: 'justify', padding: '5vh',color:'#4d5480' }}>EIFA es una Escuela Integral de 
+                <h1 className='titulos-grandes' style={{ textAlign: 'center', paddingTop: '0vh', color:'#4d5480' }}>MISIÓN</h1>
+                <p style={{ textAlign: 'justify', padding: '3vh',color:'#4d5480' }}>EIFA es una Escuela Integral de 
                   Formación de Artistas que trabaja para aportar al medio cultural ecuatoriano con profesionales
                   que desarrollen su talento creativo, escénico y musical, liderando la gestión y producción de 
                   sus propios proyectos de manera ética y responsable.</p>
               </div>
               <div className='col-12 col-sm-6'>
-                <h1 className='titulos-grandes' style={{ textAlign: 'center', fontSize: '60px', paddingTop: '10vh',color:'#4d5480' }}>VISIÓN</h1>
-                <p style={{ textAlign: 'justify', padding: '5vh',color:'#4d5480' }}>La Escuela de Formación de Artistas 
+                <h1 className='titulos-grandes' style={{ textAlign: 'center',  paddingTop: '0vh',color:'#4d5480' }}>VISIÓN</h1>
+                <p style={{ textAlign: 'justify', padding: '3vh',color:'#4d5480' }}>La Escuela de Formación de Artistas 
                 EIFA se consolidará como un referente nacional e internacional en la formación de 
                 profesionales en el arte, fortaleciendo al máximo sus capacidades, con el propósito de ofertar
                 los mejores artistas del país e impulsar el desarrollo cultural.</p>
@@ -68,8 +68,8 @@ export const IndexScreen = () => {
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
              <center><img src= { `./assets/img/Mary.png` } width= "85%" height= "auto" ></img></center>                
               <br></br>
-              <h1 className='titulos-grandes' style={{color: '#e8eaed' }}>DIRECTORA</h1>
-              <h2 className='titulos-grandes' style={{ color: '#e8eaed' }}>MARÍA DEL CARMEN CALDERÓN</h2>
+              <h1 className='titulos-grandes-directora' style={{color: '#e8eaed' }}>DIRECTORA</h1>
+              <h2 className='titulos-grandes-directora' style={{ color: '#e8eaed' }}>MARÍA DEL CARMEN CALDERÓN</h2>
               <p style={{ textAlign: 'justify', color: '#e8eaed' }}>Educadora, pintora y maquillista. Estudió en el Normal Superior Manuela Cañizares,
                 Universidades Central del Ecuador y Estatal de Guayaquil, donde obtuvo los títulos de
                 Profesora en Educación Primaria y Doctora en Ciencias de la Educación. Tiene una trayectoria de treinta y cuatro años de experiencia en Administración y Dirección Educativa, Docencia
