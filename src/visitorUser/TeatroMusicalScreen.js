@@ -13,13 +13,13 @@ export const TeatroMusicalScreen = () => {
     <NavBarScreen/>
     <CarouselScreen2/>
     <div style={{ backgroundColor: '#4d5480' }}>
-        <div className='container' style={{ paddingTop: '5vh', paddingBottom: '15vh' }}>
+        <div className='container' style={{ paddingTop: '7vh', paddingBottom: '5vh' }}>
           <div className='col-sm-12'>
             <center>
               <img src= { `./assets/img/Matriculas1.png` } className="imagen-con-tamanio"  style={{ paddingTop: '5vh' }}></img>
-              <h2 style={{ paddingTop: '5vh', textAlign: 'center', fontSize: '2rem', color: '#eeede9', fontWeight:'900' }}>MODALIDAD PRESENCIAL</h2>
+              <h2 style={{ paddingTop: '6vh', paddingBottom:'6vh', textAlign: 'center', fontSize: '2rem', color: '#eeede9', fontWeight:'900' }}>MODALIDAD PRESENCIAL</h2>
             </center>
-            <div className='row'>
+            <div className='row pantalla-pequenia'>
               <div className='col-sm'>
                 <img className="teatro-musical-img1 " src= { `./assets/img/Matriculas2.png` } width= "100%" height= "auto" ></img>
               </div>
@@ -28,6 +28,12 @@ export const TeatroMusicalScreen = () => {
               </div>
               <div className='col-sm'>
                 <img className="teatro-musical-img3 " src= { `./assets/img/Matriculas4.png` } width= "100%" height= "auto" ></img>
+              </div>
+            </div>
+
+            <div className='row pantalla-grande' style={{paddingLeft:'6vh'}}>
+              <div className='col-12'>
+                <img className="teatro-musical-img1 " src= { `./assets/img/Matriculas5.PNG` } width= "100%" height= "auto" ></img>
               </div>
             </div>
           </div>

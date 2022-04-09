@@ -28,17 +28,41 @@ export const EifaKidsScreen = () => {
               MODALIDAD PRESENCIAL
             </i></center>
           </div>                   
-          <div className='row'>
+          {/* <div className='row'>
             <div className='col-sm'>
-              <img src= { `./assets/img/Ek1.png` } width= "65%" height= "auto" style={{ marginLeft: '10vh', paddingTop: '5vh' }}></img>
+              <img src= { `./assets/img/Ek1.png` } width= "100%" height= "auto"></img>
             </div>
             <div className='col-sm'>
-              <img src= { `./assets/img/Ek2.png` } width= "100%" height= "auto" style={{ marginLeft: '1vh', paddingTop: '5vh' }}></img>
+              <img src= { `./assets/img/Ek2.png` } width= "100%" height= "auto" ></img>
             </div>
             <div className='col-sm'>
-                <img src= { `./assets/img/Ek3.png` } width= "55%" height= "auto" style={{ marginLeft: '5vh', paddingTop: '5vh' }}></img>
+                <img src= { `./assets/img/Ek3.png` } width= "100%" height= "auto" ></img>
+            </div>
+          </div> */}
+
+
+          <div className='row pantalla-pequenia'>
+            <div className='col-sm'>
+              <img className="teatro-musical-img1 " src= { `./assets/img/Ek1.png` } width= "100%" height= "auto" ></img>
+            </div>
+            <div className='col-sm'>
+              <img className="teatro-musical-img2 " src= { `./assets/img/Ek2.png` } width= "100%" height= "auto" ></img>
+            </div>
+            <div className='col-sm'>
+              <img className="teatro-musical-img3 " src= { `./assets/img/Ek3.png` } width= "100%" height= "auto" ></img>
             </div>
           </div>
+
+          <div className='row pantalla-grande'>
+            <div className='col-12'>
+              <img className="teatro-musical-img1 " src= { `./assets/img/EkGrande.png` } width= "100%" height= "auto" ></img>
+          </div>
+        </div>
+
+
+
+
+
         </div>
       </div>
 
@@ -77,7 +101,9 @@ export const EifaKidsScreen = () => {
 
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh' }}>
           <center><div style={{ color: '#1e3687', fontSize: '1.5rem', fontWeight: 'bold' }}>PARA MÁS INFORMACIÓN SOBRE LAS PRÓXIMAS MATRÍCULAS</div></center>
-          <center><img src= { `./assets/img/Matriculas13.png` } width= '35%' height= 'auto' style={{ paddingTop: '2vh' }}></img></center>
+          <a href="https://wa.link/3h7nxd" target="_blank">
+            <center><img src= { `./assets/img/Matriculas13.png` } width= '35%' height= 'auto' style={{ paddingTop: '2vh' }}></img></center>
+          </a>
         </div>
 
       <Footer/>

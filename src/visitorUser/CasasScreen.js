@@ -82,12 +82,12 @@ export const CasasScreen = () => {
                   indomables con un alto sentido de independencia, sabiduría, justicia y libertad. Los 
                   integrantes de la Casa. 
                 <div style={{ color: '#ffffff', textAlign: 'justify', fontSize: '1.0rem'}}></div>
-                  Pegasus suelen ser personas que generan
+                  
                 </div>
               </div>
               <div className='col-12 col-sm-6'>
                 <div style={{ color: '#ffffff', textAlign: 'justify', fontSize: '1.0rem', paddingTop: '5vh' }}>
-                  gran paz y tranquilidad; su mayor virtud es la 
+                Pegasus suelen ser personas que generan gran paz y tranquilidad; su mayor virtud es la 
                   fidelidad y sus ventajas son la inteligencia y sentido de verdad. Suelen ser muy 
                   determinados y solamente desatan su lado salvaje para conseguir lo que se han propuesto, 
                   usando sus dones de astucia, y agilidad. 

@@ -105,8 +105,8 @@ export const NavBarScreen = () => {
 
             <a href={"/"} className="sobre-enlace"> 
               <li className="nav-item active flex-wrap">
-                <div className="nav-link pr-4 pl-4 " href="#" onClick={()=>menuSeleccionado(1)}>
-                  <img src={"./assets/logos/Sello-EIFA.png"} width="75vw" height="auto" alt=""></img>
+                <div className="nav-link pr-4 pl-4 pt-0 pb-0 " href="#" onClick={()=>menuSeleccionado(1)}>
+                  <img src={"./assets/logos/Sello-EIFA.png"} width="85vw" height="auto" alt=""></img>
                 </div>
               </li>
             </a>
