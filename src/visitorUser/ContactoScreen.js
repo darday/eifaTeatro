@@ -10,39 +10,205 @@ export const ContactoScreen = () => {
   return (
     <div>
       <NavBarScreen/>
-      <CarouselScreen/>
 
       <div>
-        <img src= { `./assets/img/Contacto1.png` } width="100%" height= 'auto'></img>
+        <img src= { `./assets/img/galeria1/galeriapegasu1.jpeg` } width="100%" height= 'auto'></img>
       </div>
 
-      <div className='container' style={{ paddingTop: '10vh', paddingBottom: '10vh' }}>
-        <div className='row'>
-          <div className='col-12 col-sm-6' style={{paddingBottom:'5vh'}}>
-            <h1 className='titulos-grandes' style={{ color:'#4d5480' }}>CONTACTOS</h1>
-            <div style={{ textAlign: 'justify', paddingTop: '5vh', paddingBottom: '3vh', color: '#666666', fontSize: '1.1rem' }}>
-              Estamos ubicados en las calles Rafael León y Jonás Guerrero (esquina), sector González Suárez, a 
-              unacuadra del Hotel Quito, cerca del Mirador de Guápulo.
-            </div>
-            <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1.1rem' }}>
-              <b>Whatsapp:</b> 099 891 7202 
-            </div>
-            <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1.1rem' }}>
-              <b>Link directo:</b> <a href= 'https://wa.link/3h7nxd' target="_blank">Click Aquí!</a> 
-            </div>
-            <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1.1rem' }}>
-              <b>Facebook:</b> Escuela Integral de Formación de Artistas-EIFA 
-            </div>
-            <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1.1rem' }}>
-              <b>Instagram:</b> @eifa-teatromusical 
-            </div>
+      <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu2.jpg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
           </div>
-          <div className='col-12 col-sm-6' >
-            <h1 className='titulos-grandes' style={{ color:'#4d5480' }}>UBICACIÓN</h1>
-            <MapsScreen/>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu9.jpg` } className="card-img-top" alt="..." style={{ height: '100.5%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu4.jpg` } className="card-img-top" alt="..." style={{ height: '101.5%' }}></img></center>           
           </div>
         </div>
-      </div>
+
+      <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu3.jpg` } className="card-img-top" alt="..." style={{ height: '102%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu8.jpg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu14.jpg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+      <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu10.jpg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu11.jpg` } className="card-img-top" alt="..." style={{ height: '101.2%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu6.jpg` } className="card-img-top" alt="..." style={{ height: '110%' }}></img></center>           
+          </div>
+        </div>
+
+      <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu15.jpg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu16.jpg` } className="card-img-top" alt="..." style={{ height: '103%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu17.jpg` } className="card-img-top" alt="..." style={{ height: '103%' }}></img></center>           
+          </div>
+        </div>
+
+      <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu18.jpg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu19.jpg` } className="card-img-top" alt="..." style={{ height: '100.5%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria1/galeriapegasu21.jpg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+
+
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus2.JPG` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus3.JPG` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus8.JPG` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus7.JPG` } className="card-img-top" alt="..." style={{ height: '103.5%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus9.JPG` } className="card-img-top" alt="..." style={{ height: '102%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus15.JPG` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus4.jpeg` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus5.JPG` } className="card-img-top" alt="..." style={{ height: '133.5%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus6.JPG` } className="card-img-top" alt="..." style={{ height: '119%' }}></img></center>           
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus10.JPG` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus12.JPG` } className="card-img-top" alt="..." style={{ height: '117.5%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria2/galeriapegasus13.JPG` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+
+
+
+
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-1.jpeg` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-2.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-3.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-4.jpeg` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-5.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-6.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-7.jpeg` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-8.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-9.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-10.jpeg` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-11.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-12.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-13.jpeg` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-14.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-15.jpeg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <center><img src= { `./assets/img/galeria3/Graduación EIFA-16.jpeg` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center></center>
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <center></center>           
+          </div>
+        </div>
+
+
+
+      {/* <div>
+        <img src= { `./assets/img/Contacto1.png` } width="100%" height= 'auto'></img>
+      </div> */}
+
 
       <Footer/>
     </div>

@@ -123,7 +123,7 @@ export const NavBarScreen = () => {
             </a>
             <a href={"/contacto"} className="sobre-enlace"  style={{ textDecoration: 'none' }}>
             <li className="nav-item active flex-wrap"onClick={()=>menuSeleccionado(5)}>
-              <div className={`nav-link p-4 ${(localStorage.getItem("menu")==5)  && 'color-seleccionado'}`}  href="#" >CONTACTO</div>
+              <div className={`nav-link p-4 ${(localStorage.getItem("menu")==5)  && 'color-seleccionado'}`}  href="#" >GALERÍA</div>
             </li>
             </a>
           </ul>

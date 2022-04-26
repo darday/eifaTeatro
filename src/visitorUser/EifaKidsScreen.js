@@ -1,7 +1,9 @@
 import React from 'react'
 import { CarouselScreen3 } from './carousel/CarouselScreen3'
 import { Footer } from './Footer/FooterScreen'
-import { NavBarScreen } from './navBar/NavBarScreen';
+import { NavBarScreen } from './navBar/NavBarScreen'
+import pdf from './PERFIL_ESTUDIANTE_EIFA.pdf'
+import PlanEstudio from './PLAN_ESTUDIOS_EIFA 2022.pdf'
 
 export const EifaKidsScreen = () => {
   
@@ -71,39 +73,79 @@ export const EifaKidsScreen = () => {
         <div className="centrado" >
         <b style={{ fontSize: '2.5vw' }}>EL ARTE <i style={{fontWeight: 'bold'}}>FORTALECE</i> LA INTELIGENCIA EMOCIONAL</b>
         </div>
-      </div>
-      
-    
+      </div>  
 
         <div className="card-group ">
           <div className="card" style={{border:'0'}}>
-            <img src= { `./assets/img/Ek5.png` } className="card-img-top" alt="..."></img>
-           
+            <img src= { `./assets/img/Ek5.png` } className="card-img-top" alt="..."></img>           
           </div>
           <div className="card" style={{border:'0'}}>
-            <img src= { `./assets/img/Ek6.png` } className="card-img-top" alt="..."></img>
-            
+            <img src= { `./assets/img/Ek6.png` } className="card-img-top" alt="..."></img>            
           </div>
           <div className="card" style={{border:'0'}}>
-            <img src= { `./assets/img/Ek7.png` } className="card-img-top" alt="..."></img>
-           
+            <img src= { `./assets/img/Ek7.png` } className="card-img-top" alt="..."></img>           
           </div>
         </div>
 
-        <div style={{ backgroundColor: '#6f8839', paddingTop: '10vh', paddingBottom: '10vh' }}>
-          <div className='container'>
-            <div style={{ color: '#ffffff', textAlign: 'center', fontSize: '1.5rem' }}>
-              Consta de 12 módulos, cada módulo dura 6 semanas y culminará su formación artística siendo
-              el protagonista de una obra infantil. Al final de cada módulo tenemos vacaciones de un mes.
-            </div>            
+        <div style={{ backgroundColor: '#6f8839', paddingTop: '7vh', paddingBottom: '7vh' }}>
+          <div className='container' >
+            <center>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+                <div style={{ color: 'white', textAlign: 'center', fontSize: '1.5rem' }}>
+                  <div >
+                  <b>★</b> Consta de <b>12 módulos.</b>
+                  </div><br></br>
+                  <div >
+                    <b>★</b> Cada módulo dura <b>6 semanas.</b> 
+                  </div><br></br>
+                  <div >
+                    <b>★</b> Culminará su formación artística siendo el <b>protagonista</b> de una obra infantil. 
+                  </div><br></br>
+                  <div >
+                  <b>★</b> Al final de cada módulo tenemos <b>vacaciones de un mes.</b> 
+                  </div>
+                </div> 
+              </div> 
+            </center>          
           </div>
         </div>
 
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh' }}>
-          <center><div style={{ color: '#1e3687', fontSize: '1.5rem', fontWeight: 'bold' }}>PARA MÁS INFORMACIÓN SOBRE LAS PRÓXIMAS MATRÍCULAS</div></center>
-          <a href="https://wa.link/3h7nxd" target="_blank">
-            <center><img src= { `./assets/img/Matriculas13.png` } width= '35%' height= 'auto' style={{ paddingTop: '2vh' }}></img></center>
-          </a>
+        <center><div className='titulos-grandes-directora' style={{ color: '#d96912', fontSize: '5.3vh'}}>INSCRIPCIONES</div></center>        
+          <div className='col-sm-12'>
+           <div className='row pantalla-pequenia'>
+              <div className='col-sm'>
+                <a href="https://wa.link/3h7nxd" target="_blank">
+                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.png` } width= "100%" height= "auto" ></img></center>
+                </a>
+              </div>
+            </div>
+
+            <div className='row pantalla-grande' style={{paddingLeft:'6vh'}}>
+              <div className='col-12'>
+                <a href="https://wa.link/3h7nxd" target="_blank">   
+                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.PNG` } width= "30%" height= "auto" ></img></center>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ backgroundColor: 'rgb(30 54 128)'}}>
+          <div className='container' style={{ paddingBottom: '5vw', paddingTop: '5vw'}}>
+            <div className='row'>         
+              <div className='col-12 col-sm-6' >
+                <a href={PlanEstudio} target="_blank">
+                <center><img src= { `./assets/img/icono-profesor.png` } className="imagen-con-tamanio"  style={{ paddingTop: '5vh' }}></img></center>
+                </a>
+              </div>
+              <div className='col-12 col-sm-6' >
+                <a href={pdf} target="_blank">
+                <center><img src= { `./assets/img/icono-profesor2.png` } className="imagen-con-tamanio"  style={{ paddingTop: '10vh', paddingBottom: '5vh' }}></img></center>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
       <Footer/>

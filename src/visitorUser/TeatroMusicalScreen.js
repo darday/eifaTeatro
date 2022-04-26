@@ -48,34 +48,9 @@ export const TeatroMusicalScreen = () => {
           </div>
         </div>
 
-        <div className='container'>
-          <div style={{ paddingBottom: '5vh' }}>
-            <div className='row'>
-              <div className='col-12 col-sm-6'>
-              <center><img src= { `./assets/img/Matriculasicono9.png` } width="35%" height= 'auto' style={{ paddingTop: '7vh' }}></img></center>
-                <div className='titulos-grandes' style={{ textAlign: 'center', paddingTop: '4vh', fontSize: '1.5rem',color:'#4d5480'}}>CONVENIOS INTERNACIONALES</div>
-                <div style={{ textAlign: 'center', padding: '3vh',color:'#4d5480', fontSize: '1.1rem' }}>En Argentina con la Fundación Julio
-                    Bocca dónde puedes continuar tus estudios como Intérprete en Teatro Musical .</div>
-              </div>
-              <div className='col-12 col-sm-6'>
-              <center><img src= { `./assets/img/Matriculasicono10.png` } width="35%" height= 'auto' style={{ paddingTop: '7vh' }}></img></center>
-                <div className='titulos-grandes' style={{ textAlign: 'center', fontSize: '1.5rem', paddingTop: '4vh',color:'#4d5480' }}>CONTAMOS CON TEATRO PROPIO</div>
-                <div style={{ textAlign: 'center', padding: '3vh',color:'#4d5480', fontSize: '1.1rem'}}>También contamos con nuestro
-                    propio teatro para los estudiantes, el <a href="https://teatrovictoriaec.com/" target="_blank" style={{textDecoration: 'none' }}>@TeatroVictoriaEC</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <img src= { `./assets/img/banner-conviertete-en-el-protagonista-con-frase.png` } width="100%" height= 'auto'></img>
-        </div>
-    {/* pdfs */}
-    
-        <div className='container' style={{ paddingTop: '10vh', paddingBottom: '10vh' }}>
-          <div className='row'>
         
-            
+        <div className='container' style={{ paddingTop: '10vh', paddingBottom: '10vh' }}>
+          <div className='row'>         
             <div className='col-12 col-sm-6' >
               <a href={PlanEstudio} target="_blank">
                 <center><img src= { `./assets/img/Matriculas11.png` } width= '80%' height= 'auto'></img></center>
@@ -88,28 +63,90 @@ export const TeatroMusicalScreen = () => {
             </div>
           </div>
         </div>
+
+        <div>
+          <img src= { `./assets/img/banner-conviertete-en-el-protagonista-con-frase.png` } width="100%" height= 'auto'></img>
+        </div>
+    {/* pdfs */}
+
+      <div style={{   paddingBottom: '4vh' }}>
+          <div className='container'> 
+            <div style={{ paddingBottom: '2vh', paddingTop: '2vw' }}> 
+              <h3 className='titulos-grandes-directora' style={{ textAlign: 'center', color: '#33408e', fontSize: '2.5rem'}}><b style={{color:'#33408e'}}>NUESTRAS CLASES</b></h3> 
+                <div style={{ textAlign: 'center', color: '#33408e', paddingTop: '2vh', fontSize: '1.9rem'}}>
+                  Como parte de su formación integral en actuación, canto y baile, 
+                  nuestros estudiantes reciben diferentes módulos, conocimientos y experiencia en el escenario 
+                  en nuestro Teatro Victoria.<br></br> <br></br>
+                  Además formamos parte de proyectos artísticos a gran escala en los que los estudiantes y 
+                  miembros de EIFA tienen la experiencia de poner en práctica sus conocimientos. 
+                </div>                 
+            </div>
+          </div>
+        </div>
+
+        <div className="card-group ">
+          <div className="card" style={{border:'0'}}>
+            <img src= { `./assets/img/EifaTeatro3.JPG` }></img>           
+          </div>
+          <div className="card" style={{border:'0'}}>
+            <img src= { `./assets/img/EifaTeatro2.JPG` } ></img>            
+          </div>
+        </div>
+    
         <div style={{ backgroundColor: '#6f8839', paddingTop: '10vh', paddingBottom: '10vh' }}>
           <div className='container'>
             <div className='row'>
-              <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{paddingBottom:'5vh'}}>
-                  <center><img src= { `./assets/img/icono-graduado.png` } width= '25%' height= 'auto'></img></center>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{paddingBottom:'4vh'}}>
+                  <center><img src= { `./assets/img/icono-graduado.png` } width= '35%' height= 'auto'></img></center>
               </div>
               <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{padding:"3vh"}}>
-                <h3 style={{ paddingBottom: '2vh', color: '#ffffff', fontWeight: 'bold', textAlign: 'center', fontSize: '1.5rem' }}>TÍTULO QUE OBTIENES</h3>
-                <div style={{ paddingBottom: '2vh', color: '#ffffff', textAlign: 'justify', fontSize: '1.0rem' }}>Acreditación <b style={{color:'white'}}>ARTISTA PROFESIONAL
-                  </b> mención Teatro Musical CANTO, DANZA Y ACTUACIÓN.</div>
-                <div style={{ color: '#ffffff', textAlign: 'justify', fontSize: '1.0rem' }}>Avalado por la Compañía de Teatro Musical EIFA, debidamente legalizada.</div>
+                <h3 style={{ paddingBottom: '2vh', color: '#ffffff', fontWeight: 'bold', textAlign: 'center', fontSize: '2rem' }}>AL CULMINAR LA CARRERA OBTENDRÁS</h3>
+                <div style={{ paddingBottom: '2vh', color: '#ffffff', textAlign: 'center', fontSize: '1.5rem' }}>Una Acreditación como<b style={{color:'white'}}> ARTISTA
+                  PROFESIONAL </b> Mención Teatro Musical CANTO, DANZA Y ACTUACIÓN. Avalado
+                  por EIFA Cía. Ltda.</div>
               </div>
             </div>
           </div>
         </div>
 
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh' }}>
-          <center><div style={{ color: '#1e3687', fontSize: '1.5rem', fontWeight: 'bold' }}>¿DESEAS INSCRIBIRTE?</div></center>
-          <a href="https://wa.link/3h7nxd" target="_blank">
-            <center><img src= { `./assets/img/Matriculas13.png` } width= '35%' height= 'auto' style={{ paddingTop: '2vh' }}></img></center>
-          </a>
+        <center><div className='titulos-grandes-directora' style={{ color: '#d96912', fontSize: '5.3vh'}}>INSCRIPCIONES</div></center>        
+          <div className='col-sm-12'>
+           <div className='row pantalla-pequenia'>
+              <div className='col-sm'>
+                <a href="https://wa.link/3h7nxd" target="_blank">
+                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.png` } width= "100%" height= "auto" ></img></center>
+                </a>
+              </div>
+            </div>
+
+            <div className='row pantalla-grande' style={{paddingLeft:'6vh'}}>
+              <div className='col-12'>
+                <a href="https://wa.link/3h7nxd" target="_blank">   
+                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.PNG` } width= "30%" height= "auto" ></img></center>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div style={{ backgroundColor: 'rgb(30 54 128)'}}>
+          <div className='container' style={{ paddingBottom: '5vw', paddingTop: '5vw'}}>
+            <div className='row'>         
+              <div className='col-12 col-sm-6' >
+                <a href={PlanEstudio} target="_blank">
+                <center><img src= { `./assets/img/icono-profesor.png` } className="imagen-con-tamanio"  style={{ paddingTop: '5vh' }}></img></center>
+                </a>
+              </div>
+              <div className='col-12 col-sm-6' >
+                <a href={pdf} target="_blank">
+                <center><img src= { `./assets/img/icono-profesor2.png` } className="imagen-con-tamanio"  style={{ paddingTop: '10vh', paddingBottom: '5vh' }}></img></center>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       <Footer/>
 </div>
   )
