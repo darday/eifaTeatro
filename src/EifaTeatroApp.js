@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CasasScreen } from './visitorUser/CasasScreen'
 import { ContactoScreen } from './visitorUser/ContactoScreen'
 import { EifaKidsScreen } from './visitorUser/EifaKidsScreen'
+import { GaleriaScreen } from './visitorUser/gallery/GaleriaScreen'
 import { IndexScreen } from './visitorUser/IndexScreen'
 import { NavBarScreen } from './visitorUser/navBar/NavBarScreen'
 import { TeatroMusicalScreen } from './visitorUser/TeatroMusicalScreen'
@@ -18,7 +19,7 @@ export const EifaTeatroApp = () => {
           <Route path="/eifa-kids" element={<EifaKidsScreen/>} />
           <Route path="/casas" element={<CasasScreen/>} />
           <Route path="/contacto" element={<ContactoScreen/>} />
-          <Route path="/galeria" element={<ContactoScreen/>} />
+          <Route path="/galeria" element={<GaleriaScreen/>} />
         </Routes>      
       </BrowserRouter>
 
