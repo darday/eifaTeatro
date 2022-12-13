@@ -122,7 +122,7 @@ export const ContactoScreen = () => {
             <center><img src= { `./assets/img/galeria2/galeriapegasus12.JPG` } className="card-img-top" alt="..." style={{ height: '117.5%' }}></img></center>
           </div>
           <div className="card" style={{border:'0'}}>
-            <center><img src= { `./assets/img/galeria2/galeriapegasus13.JPG` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
+            <center><img src= { `./assets/img/galeria2/galeriapegasus13.jpg` } className="card-img-top" alt="..." style={{ height: '100%' }}></img></center>           
           </div>
         </div>
 
@@ -191,7 +191,7 @@ export const ContactoScreen = () => {
           </div>
         </div>
 
-        <div className="card-group ">
+        {/* <div className="card-group ">
           <div className="card" style={{border:'0'}}>
             <center><img src= { `./assets/img/galeria3/Graduación EIFA-16.jpeg` } className="card-img-top" alt="..." style={{height: '100%' }}></img></center>           
           </div>
@@ -201,7 +201,7 @@ export const ContactoScreen = () => {
           <div className="card" style={{border:'0'}}>
             <center></center>           
           </div>
-        </div>
+        </div> */}
 
 
 

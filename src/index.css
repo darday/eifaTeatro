@@ -66,6 +66,27 @@ p {
   }
 }
 
+
+.casas-pantalla-grande{
+  width:100%;
+  /* display: none !important; */
+}
+
+.casas-pantalla-pequenia{
+  display: none !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .casas-pantalla-grande{
+    /* width:100%; */
+    display: none !important;
+  }
+  .casas-pantalla-pequenia{
+    display: flex !important;
+    /* width:100%; */
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .inscripcion-grande{
     /* width:100%; */
@@ -129,7 +150,7 @@ p {
 
 @media only screen and (max-width: 600px) {
   .carousel-item {
-    height: 60vh !important;
+    height: 57vh !important;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -198,7 +219,7 @@ a:hover.sobre-enlace {
 /* img 100 grande */
 @media only screen and (min-width: 768px) {
   .imagen-con-tamanio{
-    width:60% !important;
+    width:45% !important;
   }
  
 }
@@ -299,7 +320,7 @@ a:hover.sobre-enlace {
       bottom: 5%;
     
       text-decoration: none;
-        padding: 5px;
+        padding: 8px;
         font-weight: 600;
         font-size: 0.7rem;
         color: #e63d00;
@@ -334,7 +355,7 @@ a:hover.sobre-enlace {
       bottom: 5%;
     
       text-decoration: none;
-        padding: 5px;
+        padding: 8px;
         font-weight: 600;
         font-size: 0.7rem;
         color: #207019;
@@ -342,6 +363,26 @@ a:hover.sobre-enlace {
         border-radius: 6px;
         border: 2px solid #ffffff;
     }  
+  }
+
+  .nuestras-clases{
+    font-size: 1.6rem !important;
+  }
+  @media only screen and (max-width: 767px) {
+    .nuestras-clases{
+      font-size: 1.1rem !important;
+    }
+  }
+
+  .home-convenios{
+    padding-left: 15vh;
+    padding-right: 15vh;
+  }
+  @media only screen and (max-width: 767px) {
+    .home-convenios{
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
 

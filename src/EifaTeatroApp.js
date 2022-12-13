@@ -18,6 +18,7 @@ export const EifaTeatroApp = () => {
           <Route path="/eifa-kids" element={<EifaKidsScreen/>} />
           <Route path="/casas" element={<CasasScreen/>} />
           <Route path="/contacto" element={<ContactoScreen/>} />
+          <Route path="/galeria" element={<ContactoScreen/>} />
         </Routes>      
       </BrowserRouter>
 

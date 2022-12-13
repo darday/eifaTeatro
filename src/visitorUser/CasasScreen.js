@@ -23,47 +23,76 @@ export const CasasScreen = () => {
           </div>            
         </div>
       </div>
-
-      <div className="contenedor">
-        <img src= { `./assets/img/1casaFenix.jpeg` } width="100%" height= 'auto'></img>
-        <div className="centradoCasas" >
-          <div className='row'style={{ paddingTop: '2vh'}}>
-            <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-            </div>
-            <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{ textAlign: 'justify', color: '#e8eaed', paddingRight: '10vh', paddingLeft: '4vh'}}> 
-              <h3 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '3.3vw', fontWeight: 'bold'}} >CASA FENICE</h3>
-              Esta casa está representada por el Ave Fénix y acepta entre sus integrantes a estudiantes 
-              que, al igual que esta criatura, poseen la capacidad y fuerza de darse forma a sí mismos,
-              iluminando su propio camino con valentía y renaciendo de las cenizas y el fuego; cada 
-              vez más fuertes, más grandes y más sabios.<br></br> <br></br>
-              Los integrantes de las Casa Fenice suelen ser personas 
-              que sirven de inspiración a los demás, pero que, ante todo, son capaces de seguir adelante
-              ante la adversidad, con sus alas cada vez más prominentes.<br></br><br></br> 
-              LEMA: Ut queant laxis resonare fibris. (Latin).<br></br> 
-              VALORES: Valentía, lealtad, honor, superación.<br></br>
-              COLORES: Dorado y carmesí.<br></br> 
-              ELEMENTO: Fuego.<br></br> 
-              PIEDRA: Ópalo.<br></br>
-              RAMA: Canto.
-            </div>              
-          </div> 
+      {/* pantala grande */}
+      <div className="contenedor casas-pantalla-grande">
+        <div className=" ">
+          <img src= { `./assets/img/1casaFenix.jpeg` } width="100%" height= 'auto'></img>
+          <div className="centradoCasas" >
+            <div className='row'style={{ paddingTop: '2vh'}}>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+              </div>
+              <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{ textAlign: 'justify', color: '#e8eaed', paddingRight: '10vh', paddingLeft: '4vh'}}> 
+                <h3 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '3.3vw', fontWeight: 'bold'}} >CASA FENICE</h3>
+                Esta casa está representada por el Ave Fénix y acepta entre sus integrantes a estudiantes 
+                que, al igual que esta criatura, poseen la capacidad y fuerza de darse forma a sí mismos,
+                iluminando su propio camino con valentía y renaciendo de las cenizas y el fuego; cada 
+                vez más fuertes, más grandes y más sabios.<br></br> <br></br>
+                Los integrantes de las Casa Fenice suelen ser personas 
+                que sirven de inspiración a los demás, pero que, ante todo, son capaces de seguir adelante
+                ante la adversidad, con sus alas cada vez más prominentes.<br></br><br></br> 
+                LEMA: Ut queant laxis resonare fibris. (Latin).<br></br> 
+                VALORES: Valentía, lealtad, honor, superación.<br></br>
+                COLORES: Dorado y carmesí.<br></br> 
+                ELEMENTO: Fuego.<br></br> 
+                PIEDRA: Ópalo.<br></br>
+                RAMA: Canto.
+              </div>              
+            </div> 
+          </div>
         </div>
+        
+      </div>
+      {/* Pantalla Pequeño */}
+      <div className="contenedor casas-pantalla-pequenia" style={{backgroundColor:'#7d1316'}}>
+        
+        <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{ textAlign: 'justify', color: '#e8eaed'}}> 
+                <h1 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '4.5vh', fontWeight: 'bold',paddingTop:'4vh'}} >CASA FENICE</h1>
+                <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+                  <center><img src= { `./assets/img/Fenix-esc.png` } width= "70%" height= "auto" ></img></center>                
+                </div>
+                Esta casa está representada por el Ave Fénix y acepta entre sus integrantes a estudiantes 
+                que, al igual que esta criatura, poseen la capacidad y fuerza de darse forma a sí mismos,
+                iluminando su propio camino con valentía y renaciendo de las cenizas y el fuego; cada 
+                vez más fuertes, más grandes y más sabios.<br></br> <br></br>
+                Los integrantes de las Casa Fenice suelen ser personas 
+                que sirven de inspiración a los demás, pero que, ante todo, son capaces de seguir adelante
+                ante la adversidad, con sus alas cada vez más prominentes.<br></br><br></br> 
+                LEMA: Ut queant laxis resonare fibris. (Latin).<br></br> 
+                VALORES: Valentía, lealtad, honor, superación.<br></br>
+                COLORES: Dorado y carmesí.<br></br> 
+                ELEMENTO: Fuego.<br></br> 
+                PIEDRA: Ópalo.<br></br>
+                RAMA: Canto.
+              </div>  
+        
       </div>
 
       <div style={{ backgroundColor: '#7d1316' }}> 
         <div className='container'>
           <h1 style={{color: '#e8eaed', padding: '5vh', textAlign: 'left', fontSize: '4.5vh', fontWeight: '900'}}>PROFESORES</h1>
-          <h1 style={{color: '#e8eaed', paddingTop: '0vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Iván Acosta</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '0vh', paddingLeft:'10%', textAlign: 'left', fontSize: '4vh '}}>Iván Acosta</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Fenice1IvanAcosta.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Fenice1IvanAcosta.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>ivanacostaartista </label></i>
-              </div>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh',paddingLeft:'15%'}}>
+                  <label style={{ fontFamily:'Verdana' }}> <a href="https://instagram.com/ivanacostaartista?igshid=YmMyMTA2M2Y="  target="_blank" style={{textDecoration:'none', color:"white"}}>ivanacostaartista </a></label>
+                </i>
+            </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Cantante y director musical. Realizó sus estudios
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Cantante y director musical. Realizó sus estudios
                 musicales en el Conservatorio Nacional y en la Universidad de los Hemisferios. Actualmente 
                 tiene a su cargo el Coro y el Club de canto de la UDLA, dirige el Coro De la Escuela Integral 
                 de Formación de Artistas (EIFA) y el Coro EnKanto, fue Director fundador del Coro de la 
@@ -84,17 +113,19 @@ export const CasasScreen = () => {
 
       <div style={{ backgroundColor: '#7d1316' }}> 
         <div className='container'>
-          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>María Katherina</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '5vh',paddingLeft:'10%', textAlign: 'left', fontSize: '4vh '}}>María Katherina</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Fenice2MariaKatherina.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Fenice2MariaKatherina.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>mariakatherinamusic </label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh',paddingLeft:'15%'}}>
+                  <label style={{ fontFamily:'Verdana' }}><a href="https://instagram.com/mariakatherinamusic?igshid=YmMyMTA2M2Y="  target="_blank" style={{textDecoration:'none', color:"white"}} >mariakatherinamusic</a> </label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>María Katherina es una artista de indie-pop muy
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>María Katherina es una artista de indie-pop muy
                 versátil, vanguardista y orgullosamente ecuatoriana. Se ha distinguido por crear atmósferas
                 y melodías vocales muy meticulosas en sus producciones, las reflejan sin lugar a dudas en sus
                 productos finales. Cuando crea su música, usualmente etérea y de la mano de lo
@@ -117,17 +148,19 @@ export const CasasScreen = () => {
 
       <div style={{ backgroundColor: '#7d1316' }}> 
         <div className='container'>
-          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Isaac Hinojosa</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'10%',textAlign: 'left', fontSize: '4vh '}}>Isaac Hinojosa</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Fenice3IsaacHinojosa.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Fenice3IsaacHinojosa.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>isaac_hinojosa1</label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh',paddingLeft:'15%'}}>
+                  <label style={{ fontFamily:'Verdana' }}><a href="https://instagram.com/isaac_hinojosa1?igshid=YmMyMTA2M2Y="  target="_blank" style={{textDecoration:'none', color:"white"}} > isaac_hinojosa1</a></label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Cantante lírico en voz de contratenor y licenciado
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Cantante lírico en voz de contratenor y licenciado
                 en Ciencias de la Educación con mención en Educación Musical. Comenzó sus estudios en canto
                 lírico en el conservatorio Franz Liszt bajo la tutela de Jacqueline Hernandez y Beth Egnatoff, en este
                 período se incluye al coro del conservatorio bajo la dirección de la Maestra Cecilia Sánchez. <br></br>
@@ -155,8 +188,8 @@ export const CasasScreen = () => {
 
 
 
-
-      <div className="contenedor">
+{/* pantalla grande */}
+      <div className="contenedor  casas-pantalla-grande">
         <img src= { `./assets/img/2casaPegasu.jpeg` } width="100%" height= 'auto'></img>
         <div className="centradoCasas" >
           <div className='row'style={{ paddingTop: '2vh'}}>
@@ -180,21 +213,45 @@ export const CasasScreen = () => {
           </div> 
         </div>
       </div>
+{/* pantalla pequeña */}
+      <div className="contenedor  casas-pantalla-pequenia" style={{backgroundColor:'#004657'}}>
+        <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{ textAlign: 'justify', color: '#e8eaed'}}> 
+          <h3 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '4.5vh', fontWeight: 'bold',paddingTop:'4vh'}} >CASA PEGASUS</h3>
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+                  <center><img src= { `./assets/img/Pegaso-esc.png` } width= "70%" height= "auto" ></img></center>                
+          </div>
+          Esta casa está representada por el Pegaso y acepta entre sus integrantes a estudiantes dotados de un buen corazón,
+          pero a la vez rebeldes, inteligentes y bondadosos; guerreros indomables con un alto sentido de independencia,
+          sabiduría, justicia y libertad.<br></br> <br></br>
+          Los integrantes de la Casa Pegasus suelen ser personas que generan gran paz y tranquilidad; su mayor virtud es la
+          fidelidad y sus ventajas son la inteligencia y sentido de verdad. Suelen ser muy determinados y solamente
+          desatan su lado salvaje para conseguir lo que se han propuesto, usando sus dones de astucia, y agilidad.<br></br><br></br> 
+          LEMA: Vivere memento vive parvo. (Latin).<br></br> 
+          VALORES: Inteligencia, bondad, resistencia y compromiso.<br></br>
+          COLORES: Blanco y azul.<br></br> 
+          ELEMENTO: Agua.<br></br> 
+          PIEDRA:  Lapis Lázuli.<br></br>
+          RAMA: Actuación. 
+        </div>  
+      </div>
+
 
       <div style={{ backgroundColor: '#004657' }}> 
         <div className='container'>
           <h1 style={{color: '#e8eaed', padding: '5vh', textAlign: 'left', fontSize: '4.5vh', fontWeight: '900'}}>PROFESORES</h1>
-          <h1 style={{color: '#e8eaed', paddingTop: '0vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Juan Pablo Acosta</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '0vh', paddingLeft:'10%', textAlign: 'left', fontSize: '4vh '}}>Juan Pablo Acosta</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Pegasu1Juan-Pablo-Acosta-min.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Pegasu1Juan-Pablo-Acosta-min.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>juanpiacosta </label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh',paddingLeft:'15%',}}>
+                  <label style={{ fontFamily:'Verdana' }}><a href="https://instagram.com/juanpiacosta?igshid=YmMyMTA2M2Y="  target="_blank" style={{textDecoration:'none', color:"white"}} >juanpiacosta </a></label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Actor, director, cantante y pintor. Graduado en
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Actor, director, cantante y pintor. Graduado en
                 teatro y actuación en el Laboratorio Malayerba. Estudió Modern Method Acting con el maestro
                 serbio Boyan Ivic y Commedia dell’Arte con el maestro italiano Antonio Fava. Actualmente es
                 docente universitario en el área de lengua y teatro; director artístico del Teatro Victoria, miembro del
@@ -218,17 +275,19 @@ export const CasasScreen = () => {
 
       <div style={{ backgroundColor: '#004657' }}> 
         <div className='container'>
-          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Daniel Enríquez</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'10%',textAlign: 'left', fontSize: '4vh '}}>Daniel Enríquez</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Pegasu2Daniel-Enriquez-min.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Pegasu2Daniel-Enriquez-min.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>daniel_enriquez93 </label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh',paddingLeft:'15%'}}>
+                  <label style={{ fontFamily:'Verdana' }}><a href="https://instagram.com/daniel_enriquez93?igshid=YmMyMTA2M2Y="  target="_blank" style={{textDecoration:'none', color:"white"}} > daniel_enriquez93 </a></label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Actor, productor, director y dramaturgo. Ha escrito
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Actor, productor, director y dramaturgo. Ha escrito
                 y dirigido alrededor de 17 obras de microteatro. Director y escritor de las obras de teatro Operación
                 Albacora, Fracasados, Couching para agarrar, El fin de los tiempos, Mis tres regalos, El viaje y otras
                 calamidades y La teoría de los opuestos. Ha participado en el Festival de Artes Vivas de Loja con
@@ -248,17 +307,19 @@ export const CasasScreen = () => {
 
       <div style={{ backgroundColor: '#004657' }}> 
         <div className='container'>
-          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Greymar Hernández</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'10%',textAlign: 'left', fontSize: '4vh '}}>Greymar Hernández</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Pegasu3Greymar-Hernandez-min.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Pegasu3Greymar-Hernandez-min.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '2.5vh'}}><label style={{ fontFamily:'Verdana' }}>greymarhernandez.escritora</label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '2vh',paddingLeft:'13%',}}>
+                  <label style={{ fontFamily:'Verdana' }}><a href="https://instagram.com/greymarhernandez.escritora?igshid=YmMyMTA2M2Y="  target="_blank" style={{textDecoration:'none', color:"white"}} >greymarhernandez.escritora</a></label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Escritora, actriz, directora teatral, iluminadora y
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Escritora, actriz, directora teatral, iluminadora y
                 periodista. Ha trabajado para varios medios impresos y ha escrito alrededor de 40 piezas
                 teatrales que han tenido temporadas de éxito en diferentes ciudades como Madrid, Barcelona,
                 Buenos Aires, Santiago, Lima, Quito, Nuevo León, Santo Domingo, Niza, Miami, Oxnard, entre otras. <br></br><br></br>
@@ -274,17 +335,19 @@ export const CasasScreen = () => {
 
       <div style={{ backgroundColor: '#004657' }}> 
         <div className='container'>
-          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Scarlet Cisneros</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'10%', textAlign: 'left', fontSize: '4vh '}}>Scarlet Cisneros</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Pegasu4Scarlet-Cisneros-min.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Pegasu4Scarlet-Cisneros-min.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>skr.pam</label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh',paddingLeft:'15%'}}>
+                  <label style={{ fontFamily:'Verdana' }}> <a href="https://instagram.com/skr.pam?igshid=YmMyMTA2M2Y="  target="_blank" style={{textDecoration:'none', color:"white"}} > skr.pam</a></label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Actriz profesional con experiencia de 8 años
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Actriz profesional con experiencia de 8 años
                 interpretando papeles, en su mayoría protagónicos en diferentes obras de teatro como: Las Brujas de
                 Salem, de Arthur Miller, La importancia de llamarse Ernesto, de Oscar Wilde, Como Agua para
                 Chocolate, de Laura Esquivel, Los Menecmos, de Plauto, Cupo Limitado, de Tomás Urtusástegui, El
@@ -307,12 +370,8 @@ export const CasasScreen = () => {
           </div>
         </div>
       </div>
-
-
-
-
-      
-      <div className="contenedor">
+      {/* PANTALLA GRANDE */}
+      <div className="contenedor casas-pantalla-grande">
         <img src= { `./assets/img/3casaDragon.jpeg` } width="100%" height= 'auto'></img>
         <div className="centradoCasas" >
           <div className='row'style={{ paddingTop: '2vh'}}>
@@ -339,20 +398,46 @@ export const CasasScreen = () => {
         </div>
       </div>
 
+      {/* Pantalla PEQUENIA */}
+      <div className="contenedor casas-pantalla-pequenia" style={{backgroundColor:'#577000'}}>
+        <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{ textAlign: 'justify', color: '#e8eaed'}}> 
+            <h3 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '4.5vh', fontWeight: 'bold',paddingTop:'4vh'}} >CASA DRAGO</h3>
+            <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+                  <center><img src= { `./assets/img/Dragon-esc.png` } width= "70%" height= "auto" ></img></center>                
+            </div>
+            Esta casa está representada por el
+            Dragón y acepta entre sus integrantes a estudiantes que se identifican como
+            seres independientes, fuertes y solitarios, que poseen un gran poder para enfrentar
+            cualquier reto gracias a sus habilidades físicas, espirituales y mentales. Su
+            fortaleza radica en su poder espiritual y su fuerza.<br></br> <br></br>
+            Los integrantes de la Casa Drago suelen ser personas que además poseen un gran
+            sentido de intuición y conocimiento. Están dispuestos a defender a los demás
+            con coraje y sabiduría y, por lo tanto, son benévolos.<br></br><br></br> 
+            LEMA: En talis tamquam saltare vivir. (Latin).<br></br> 
+            VALORES: Audacia, coraje, templanza, liderazgo.<br></br>
+            COLORES: Verde y ámbar.<br></br> 
+            ELEMENTO: Tierra.<br></br> 
+            PIEDRA: Esmeralda.<br></br>
+            RAMA: Danza.
+          </div> 
+      </div>
+
       <div style={{ backgroundColor: '#577000' }}> 
         <div className='container'>
           <h1 style={{color: '#e8eaed', padding: '5vh', textAlign: 'left', fontSize: '4.5vh', fontWeight: '900'}}>PROFESORES</h1>
-          <h1 style={{color: '#e8eaed', paddingTop: '0vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Pancho Viteri</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '0vh', paddingLeft:'10%', textAlign: 'left', fontSize: '4vh '}}>Pancho Viteri</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Drago1Pancho-Viteri-min.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Drago1Pancho-Viteri-min.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>pancho_viteri</label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh',paddingLeft:'15%'}}>
+                  <label style={{ fontFamily:'Verdana' }}><a href="https://instagram.com/pancho_viteri?igshid=YmMyMTA2M2Y=" target="_blank" style={{textDecoration:'none', color:"white"}} >pancho_viteri</a></label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Bailarín e intérprete de danza urbana por más de 8
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Bailarín e intérprete de danza urbana por más de 8
                 años. Comenzó su formación en el estudio de baile Passion Studio por 3 años en Melbourne, Australia
                 donde recibió fundamentos de HipHop Dance, House, Popping, Locking, entre otros. En Australia
                 tuvo su primer acercamiento entrenando con coreógrafos de talla mundial como Keone Madrid &
@@ -376,17 +461,19 @@ export const CasasScreen = () => {
 
       <div style={{ backgroundColor: '#577000' }}> 
         <div className='container'>
-          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Luis Cifuentes Tapia</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'10%', textAlign: 'left', fontSize: '4vh '}}>Luis Cifuentes Tapia</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Drago2Luis-Cifuentes-min.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Drago2Luis-Cifuentes-min.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>pancho_viteri </label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh',paddingLeft:'15%'}}>
+                  <label style={{ fontFamily:'Verdana' }}><a href="https://instagram.com/4zulino?igshid=YmMyMTA2M2Y=" target="_blank" style={{textDecoration:'none', color:"white"}}>4zulino </a></label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Artista Chileno. Mtr. En Estudios Avanzados de
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Artista Chileno. Mtr. En Estudios Avanzados de
                 Teatro, (en curso 2022). Licenciado en artes escénicas de la Universidad Mayor (Chile).
                 Posgrado Entre cuerpos y miradas: artes, poéticas y políticas de la mirada en la educación, FLACSO
                 Argentina. Egresado de la Escuela de Ballet del Teatro Municipal de Santiago (Chile), obteniendo el
@@ -412,35 +499,26 @@ export const CasasScreen = () => {
 
       <div style={{ backgroundColor: '#577000' }}> 
         <div className='container'>
-          <h1 style={{color: '#e8eaed', paddingTop: '5vh', paddingLeft:'5vh', textAlign: 'left', fontSize: '4vh '}}>Camila Paredes</h1>        
+          <h1 style={{color: '#e8eaed', paddingTop: '5vh',paddingLeft:'10%', textAlign: 'left', fontSize: '4vh '}}>Camila Paredes</h1>        
         </div>
         <div className='container'>
           <div className='row' style={{paddingBottom:'5vh', paddingLeft:'5vh', paddingRight: '5vh'}}>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-              <center><img src= { `./assets/img/Drago3Camila-Paredes-min.png` } width= "100%" height= "auto" ></img></center>                
+              <center><img src= { `./assets/img/Drago3Camila-Paredes-min.png` } width= "70%" height= "auto" ></img></center>                
               <br></br>
-                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '3vh'}}><label style={{ fontFamily:'Verdana' }}>pancho_viteri</label></i>
+                <i className="fab fa-instagram fa-2x" style={{ color:'#e5e4e0', fontSize: '2.5vh',paddingLeft:'13%'}}>
+                  <label style={{ fontFamily:'Verdana' }}><a href='https://instagram.com/camilaparedesartista?igshid=YmMyMTA2M2Y=' target="_blank" style={{textDecoration:'none', color:"white"}}>camilaparedesartista</a></label>
+                </i>
               </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
-              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2.1vh'}}>Artista Chileno. Mtr. En Estudios Avanzados de
-                Teatro, (en curso 2022). Licenciado en artes escénicas de la Universidad Mayor (Chile).
-                Posgrado Entre cuerpos y miradas: artes, poéticas y políticas de la mirada en la educación, FLACSO
-                Argentina. Egresado de la Escuela de Ballet del Teatro Municipal de Santiago (Chile), obteniendo el
-                grado de Bailarín Profesional en Danza Clásica,realizó una certificación en “ Royal Academy of
-                Dance Vocational Graded Examination in Dance, Intermediate”. <br></br>
-                En su país, fue miembro de las compañías: Ballet de
-                Cámara del Teatro Municipal de Santiago, Ballet de Arte Moderno y Ballet del Teatro Nescafé, en las que
-                desempeño roles de cuerpo de baile y bailarín solista, interpretando obras de repertorio de ballet
-                clásico. Posteriormente, en Ecuador formó parte del elenco de bailarines del Ballet Nacional de
-                Ecuador e integra la agrupación de danza contemporánea Callejón Vacío.
-                Ha trabajado Producciones y workshops con Coreógrafos y Maestros reconocidos a nivel internacional. <br></br>
-                Trabajó como docente impartiendo clases y talleres
-                de Técnica Académica en la Escuela Municipal de Cabildo, Adjunta al Teatro Municipal de Santiago de
-                Chile, en la Escuela Metropolitana de Danza “Metrodanza” y en la Compañía Nacional de Danza de Ecuador. <br></br>
-                Participó en festivales y encuentros de Danza en
-                Chile, Ecuador, Argentina y España. Actualmente es parte de la Compañía Nacional de
-                Danza del Ecuador como Interprete-Creador. Docente en Eifa Escuela Integral de Formación de
-                Artistas y co-fundador del proyecto Agujero Negro.
+              <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '2vh'}}>Artista integral graduada de Teatro Musical en la Escuela Integral de Formación de
+Artistas EIFA.
+Ha sido parte de varias obras de Teatro Musical: Todos a la Cama,
+Beethoven Ira Mansa y Chiquitita. Se ha desempeñado en diferentes papeles, como
+por ejemplo el personaje protagónico del musical Chiquitita en el Teatro Bolívar. <br></br>
+Participó como actriz en dos sketches de Enchufe TV y en la obra Seis Personajes en
+Busca de Autor. Además, ha sido parte de numerosos shows artísticos en las tres
+ramas del Teatro Musical: actuación, canto y baile.
               </div>
             </div> 
           </div>

@@ -16,7 +16,7 @@ export const TeatroMusicalScreen = () => {
         <div className='container' style={{ paddingTop: '7vh', paddingBottom: '5vh' }}>
           <div className='col-sm-12'>
             <center>
-              <img src= { `./assets/img/Matriculas1.png` } className="imagen-con-tamanio"  style={{ paddingTop: '5vh' }}></img>
+              <img src= { `./assets/img/Matriculas1.png` } className="imagen-con-tamanio"   style={{ paddingTop: '5vh' }}></img>
               <h2 style={{ paddingTop: '6vh', paddingBottom:'6vh', textAlign: 'center', fontSize: '2rem', color: '#eeede9', fontWeight:'900' }}>MODALIDAD PRESENCIAL</h2>
             </center>
             <div className='row pantalla-pequenia'>
@@ -73,7 +73,7 @@ export const TeatroMusicalScreen = () => {
           <div className='container'> 
             <div style={{ paddingBottom: '2vh', paddingTop: '2vw' }}> 
               <h3 className='titulos-grandes-directora' style={{ textAlign: 'center', color: '#33408e', fontSize: '2.5rem'}}><b style={{color:'#33408e'}}>NUESTRAS CLASES</b></h3> 
-                <div style={{ textAlign: 'center', color: '#33408e', paddingTop: '2vh', fontSize: '1.9rem'}}>
+                <div className="nuestras-clases" style={{ textAlign: 'center', color: '#33408e', paddingTop: '2vh'}}>
                   Como parte de su formación integral en actuación, canto y baile, 
                   nuestros estudiantes reciben diferentes módulos, conocimientos y experiencia en el escenario 
                   en nuestro Teatro Victoria.<br></br> <br></br>
@@ -93,15 +93,15 @@ export const TeatroMusicalScreen = () => {
           </div>
         </div>
     
-        <div style={{ backgroundColor: '#6f8839', paddingTop: '10vh', paddingBottom: '10vh' }}>
+        <div style={{ backgroundColor: '#6f8839', paddingTop: '7vh', paddingBottom: '7vh' }}>
           <div className='container'>
             <div className='row'>
               <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{paddingBottom:'4vh'}}>
-                  <center><img src= { `./assets/img/icono-graduado.png` } width= '35%' height= 'auto'></img></center>
+                  <center><img src= { `./assets/img/icono-graduado.png` } width= '25%' height= 'auto'></img></center>
               </div>
               <div className='col-12 col-sm-12 col-md-12 col-lg-6' style={{padding:"3vh"}}>
                 <h3 style={{ paddingBottom: '2vh', color: '#ffffff', fontWeight: 'bold', textAlign: 'center', fontSize: '2rem' }}>AL CULMINAR LA CARRERA OBTENDRÁS</h3>
-                <div style={{ paddingBottom: '2vh', color: '#ffffff', textAlign: 'center', fontSize: '1.5rem' }}>Una Acreditación como<b style={{color:'white'}}> ARTISTA
+                <div style={{ paddingBottom: '2vh', color: '#ffffff', textAlign: 'center', fontSize: '1.2rem' }}>Una Acreditación como<b style={{color:'white'}}> ARTISTA
                   PROFESIONAL </b> Mención Teatro Musical CANTO, DANZA Y ACTUACIÓN. Avalado
                   por EIFA Cía. Ltda.</div>
               </div>
@@ -115,7 +115,7 @@ export const TeatroMusicalScreen = () => {
            <div className='row pantalla-pequenia'>
               <div className='col-sm'>
                 <a href="https://wa.link/3h7nxd" target="_blank">
-                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.png` } width= "100%" height= "auto" ></img></center>
+                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.png`} width= "100%" height= "auto" ></img></center>
                 </a>
               </div>
             </div>
@@ -123,7 +123,7 @@ export const TeatroMusicalScreen = () => {
             <div className='row pantalla-grande' style={{paddingLeft:'6vh'}}>
               <div className='col-12'>
                 <a href="https://wa.link/3h7nxd" target="_blank">   
-                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.PNG` } width= "30%" height= "auto" ></img></center>
+                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.png` } width= "30%" height= "auto" ></img></center>
                 </a>
               </div>
             </div>
@@ -131,16 +131,16 @@ export const TeatroMusicalScreen = () => {
         </div>
 
         <div style={{ backgroundColor: 'rgb(30 54 128)'}}>
-          <div className='container' style={{ paddingBottom: '5vw', paddingTop: '5vw'}}>
+          <div className='container' style={{ paddingBottom: '4vw', paddingTop: '5vw'}}>
             <div className='row'>         
               <div className='col-12 col-sm-6' >
                 <a href={PlanEstudio} target="_blank">
-                <center><img src= { `./assets/img/icono-profesor.png` } className="imagen-con-tamanio"  style={{ paddingTop: '5vh' }}></img></center>
+                <center><img src= { `./assets/img/icono-profesor.png` } className=""width='60%'   style={{ paddingLeft:'5vh' }}></img></center>
                 </a>
               </div>
               <div className='col-12 col-sm-6' >
-                <a href={pdf} target="_blank">
-                <center><img src= { `./assets/img/icono-profesor2.png` } className="imagen-con-tamanio"  style={{ paddingTop: '10vh', paddingBottom: '5vh' }}></img></center>
+                <a href={'/casas'} target="_blank">
+                <center><img src= { `./assets/img/icono-profesor2.png` } className="" width='60%'  style={{ paddingTop: '10vh', paddingBottom: '5vh' }}></img></center>
                 </a>
               </div>
             </div>

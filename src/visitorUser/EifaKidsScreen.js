@@ -116,7 +116,7 @@ export const EifaKidsScreen = () => {
            <div className='row pantalla-pequenia'>
               <div className='col-sm'>
                 <a href="https://wa.link/3h7nxd" target="_blank">
-                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.png` } width= "100%" height= "auto" ></img></center>
+                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.png`} width= "100%" height= "auto" ></img></center>
                 </a>
               </div>
             </div>
@@ -124,7 +124,7 @@ export const EifaKidsScreen = () => {
             <div className='row pantalla-grande' style={{paddingLeft:'6vh'}}>
               <div className='col-12'>
                 <a href="https://wa.link/3h7nxd" target="_blank">   
-                  <center><img className="teatro-musical-img1 " src= { `./assets/img/clic-aqui.PNG` } width= "30%" height= "auto" ></img></center>
+                  <center><img className="teatro-musical-img1 " style={{paddingRight:'2%'}} src= { `./assets/img/clic-aqui.png` } width= "25%" height= "auto" ></img></center>
                 </a>
               </div>
             </div>
@@ -132,16 +132,16 @@ export const EifaKidsScreen = () => {
         </div>
 
         <div style={{ backgroundColor: 'rgb(30 54 128)'}}>
-          <div className='container' style={{ paddingBottom: '5vw', paddingTop: '5vw'}}>
+          <div className='container' style={{ paddingBottom: '2vw', paddingTop: '2vw'}}>
             <div className='row'>         
               <div className='col-12 col-sm-6' >
                 <a href={PlanEstudio} target="_blank">
-                <center><img src= { `./assets/img/icono-profesor.png` } className="imagen-con-tamanio"  style={{ paddingTop: '5vh' }}></img></center>
+                <center><img src= { `./assets/img/icono-profesor.png` } className="" width='50%'  style={{ paddingTop: '1vh',paddingLeft:'4vh' }}></img></center>
                 </a>
               </div>
               <div className='col-12 col-sm-6' >
-                <a href={pdf} target="_blank">
-                <center><img src= { `./assets/img/icono-profesor2.png` } className="imagen-con-tamanio"  style={{ paddingTop: '10vh', paddingBottom: '5vh' }}></img></center>
+                <a href={"/casas"} target="_blank">
+                <center><img src= { `./assets/img/icono-profesor2.png` } className="" width='50%'  style={{ paddingTop: '10vh', paddingBottom: '5vh' }}></img></center>
                 </a>
               </div>
             </div>

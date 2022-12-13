@@ -106,7 +106,7 @@ export const NavBarScreen = () => {
             <a href={"/"} className="sobre-enlace"> 
               <li className="nav-item active flex-wrap">
                 <div className="nav-link pr-4 pl-4 pt-0 pb-0 " href="#" onClick={()=>menuSeleccionado(1)}>
-                  <img src={"./assets/logos/Sello-EIFA.png"} width="85vw" height="auto" alt=""></img>
+                  <img src={"./assets/logos/Sello-EIFA.png"} width="65vw" height="auto" alt=""></img>
                 </div>
               </li>
             </a>
@@ -121,7 +121,7 @@ export const NavBarScreen = () => {
               <div className={`nav-link p-4 ${(localStorage.getItem("menu")==4)  && 'color-seleccionado'}`} href="#" onClick={()=>menuSeleccionado(4)}>CASAS</div>
             </li>
             </a>
-            <a href={"/contacto"} className="sobre-enlace"  style={{ textDecoration: 'none' }}>
+            <a href={"/galeria"} className="sobre-enlace"  style={{ textDecoration: 'none' }}>
             <li className="nav-item active flex-wrap"onClick={()=>menuSeleccionado(5)}>
               <div className={`nav-link p-4 ${(localStorage.getItem("menu")==5)  && 'color-seleccionado'}`}  href="#" >GALERÍA</div>
             </li>
