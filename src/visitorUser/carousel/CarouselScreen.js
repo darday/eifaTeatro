@@ -9,7 +9,7 @@ export const CarouselScreen = () => {
             {/* <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> */}
         </ol>
         <div className="carousel-inner">
-            <div className="carousel-item active" data-bs-interval="2000"  style={{backgroundImage:`url('./assets/carrousel1/2.png')`}}>                
+            <div className="carousel-item active" data-bs-interval="2000"  style={{backgroundImage:`url('./assets/carrousel1/4.png')`}}>                
                 <div >
                     {/* <div className="text_cent_img camping-letters animate__animated animate__fadeInLeft "><h1 className="tit-sob-img" >CAMPING CHIMBORAZO</h1></div>
                     <div className="text_cent_img2 animate__animated animate__fadeInRight "><p className="tit-sob-img2" style={{color:"white"}}>La aventura está en el camino</p></div> */}
@@ -21,7 +21,7 @@ export const CarouselScreen = () => {
                     <div className="text_cent_img2 animate__animated animate__fadeInRight "><p className="tit-sob-img2" style={{color:"white"}}>La aventura está en el camino</p></div>
                 </div>
             </div> */}
-            <div className="carousel-item " data-bs-interval="2000"  style={{backgroundImage:`url('./assets/carrousel1/3.png')`}}>                
+            <div className="carousel-item " data-bs-interval="2000"  style={{backgroundImage:`url('./assets/carrousel1/5.png')`}}>                
                 <div >
                     {/* <div className="text_cent_img camping-letters animate__animated animate__fadeInLeft "><h1 className="tit-sob-img" >CAMPING CHIMBORAZO</h1></div>
                     <div className="text_cent_img2 animate__animated animate__fadeInRight "><p className="tit-sob-img2" style={{color:"white"}}>La aventura está en el camino</p></div> */}

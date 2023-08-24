@@ -20,7 +20,7 @@ export const IndexScreen = () => {
           <div style={{ paddingBottom: '4vh' }}> 
             <div className='row'>
               <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-                <center> <img className="espacio-img-index" src= { `./assets/img/Sello-EIFA.png` } style={{ paddingTop: '5vw' }} width="45%" height= 'auto' ></img></center>
+                <center> <img className="espacio-img-index" src= { `./assets/img/Sello-EIFA1.png` } style={{ paddingTop: '5vw' }} width="45%" height= 'auto' ></img></center>
               </div>
               <div className='col-12 col-sm-12 col-md-12 col-lg-6'> 
                 <div >
@@ -32,7 +32,7 @@ export const IndexScreen = () => {
                   <br></br>
                 </div>
                 <center> 
-                  <img className="espacio-img-index" src= { `./assets/img/QS2.png` } style={{ paddingTop: '0vw' }} width="100%" height= 'auto' ></img>
+                  <img className="espacio-img-index" src= { `./assets/img/QS3.png` } style={{ paddingTop: '0vw' }} width="100%" height= 'auto' ></img>
                 </center>
                 <div style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '1rem', paddingLeft: '1vw', paddingRight: '1vw', paddingTop: '2vw'}}>Somos una <b style={{color:'white', fontStyle: 'italic'}}>
                 Escuela de Teatro Musical</b> con un programa único en el país, permite que te formes en las áreas de 
@@ -70,7 +70,7 @@ export const IndexScreen = () => {
 
 
       <div className="contenedor" >
-        <img src= { `./assets/img/EifaEstudia.png` } width="100%" height= 'auto'></img>
+        <img src= { `./assets/img/EifaEstudia3.png` } width="100%" height= 'auto'></img>
         <a href={"/teatro-musical"} >
           <div className="boton_person" >
             <center className='titulos-grandes-directora'>MÁS INFORMACIÓN</center>
@@ -79,7 +79,7 @@ export const IndexScreen = () => {
       </div>
 
       <div className="contenedor" >
-        <img src= { `./assets/img/eifaEstudia2.png` } width="100%" height= 'auto'></img>
+        <img src= { `./assets/img/eifaEstudia4.png` } width="100%" height= 'auto'></img>
         <a href={"/eifa-kids"} >
           <div className="boton_personales" >
             <center className='titulos-grandes-directora'>MÁS INFORMACIÓN</center>
@@ -107,7 +107,7 @@ export const IndexScreen = () => {
       </div>
 
       <div>
-        <img src= { `./assets/img/Contacto1.png` } width="100%" height= 'auto'></img>
+        <img src= { `./assets/img/Contacto2.png` } width="100%" height= 'auto'></img>
       </div>
 
       <div style={{ backgroundColor: 'rgb(77 84 128)', paddingBottom: '4vh' }}>
@@ -186,8 +186,7 @@ export const IndexScreen = () => {
           <div className='col-12 col-sm-6' style={{paddingBottom:'5vh'}}>
             <h1 className='titulos-grandes-directora' style={{ color:'#4d5480' }}>CONTACTOS</h1>
               <div style={{ textAlign: 'justify', paddingTop: '5vh', paddingBottom: '3vh', color: '#666666', fontSize: '1rem' }}>
-                Estamos ubicados en las calles RJonás Guerrero E15A y Rafael León (esquina), sector González 
-                Suárez, a una cuadra del Hotel Quito, cerca del Mirador de Guápulo
+                Sector Pinar Alto, calles Oe8 y N48 170528, a la izquierda del parque. A cinco minutos del Centro Comercial El Bosque.
               </div>
               <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1rem' }}>
                 <b>Whatsapp:</b> 099 891 7202 
