@@ -227,7 +227,7 @@ export const CasasScreen = () => {
             </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
               <div className='col-12 col-sm-12 col-md-12 col-lg-12' style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '1.3vw' }}>
-                <h3 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '3.3vw', fontWeight: 'bold' }} >CASA FENICE</h3>
+                <h3 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '3.3vw', fontWeight: 'bold' }} >CASA PEGASUS</h3>
                 Esta casa está representada por el Pegaso y acepta entre sus integrantes a estudiantes dotados de un buen corazón,
                 pero a la vez rebeldes, inteligentes y bondadosos; guerreros indomables con un alto sentido de independencia,
                 sabiduría, justicia y libertad.<br></br> <br></br>
@@ -438,7 +438,7 @@ export const CasasScreen = () => {
             </div>
             <div className='col-12 col-sm-12 col-md-12 col-lg-6' >
               <div className='col-12 col-sm-12 col-md-12 col-lg-12' style={{ textAlign: 'justify', color: '#e8eaed', fontSize: '1.3vw' }}>
-                <h3 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '3.3vw', fontWeight: 'bold' }} >CASA FENICE</h3>
+                <h3 style={{ textAlign: 'center', color: '#e8eaed', fontSize: '3.3vw', fontWeight: 'bold' }} >CASA DRAGO</h3>
                 Esta casa está representada por el
                 Dragón y acepta entre sus integrantes a estudiantes que se identifican como
                 seres independientes, fuertes y solitarios, que poseen un gran poder para enfrentar
