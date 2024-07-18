@@ -28,6 +28,14 @@ import img20 from './img/img20.jpg';
 import img21 from './img/img21.jpg';
 import img22 from './img/img22.jpg';
 import img23 from './img/img23.jpg';
+import img24 from './img/img24.jpg';
+import img25 from './img/img25.jpg';
+import img26 from './img/img26.jpg';
+import img27 from './img/img27.jpg';
+import img28 from './img/img28.jpg';
+import img29 from './img/img29.jpg';
+import img30 from './img/img30.jpg';
+import img31 from './img/img31.jpg';
 
 
 export const GaleriaScreen = () => {
@@ -125,6 +133,38 @@ export const GaleriaScreen = () => {
     {
       id: 23,
       imgSrc: img23,
+    },
+    {
+      id: 24,
+      imgSrc: img24,
+    },
+    {
+      id: 25,
+      imgSrc: img25,
+    },
+    {
+      id: 26,
+      imgSrc: img26,
+    },
+    {
+      id: 27,
+      imgSrc: img27,
+    },
+    {
+      id: 28,
+      imgSrc: img28,
+    },
+    {
+      id: 29,
+      imgSrc: img29,
+    },
+    {
+      id: 30,
+      imgSrc: img30,
+    },
+    {
+      id: 31,
+      imgSrc: img31,
     },
   ]
 
