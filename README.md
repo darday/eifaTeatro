@@ -1,70 +1,151 @@
-# Getting Started with Create React App
+# EIFA Teatro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sitio web público de EIFA Teatro. Es una aplicación de una sola página (SPA) construida con React 17 y Create React App. La aplicación se compila como archivos estáticos y se publica manualmente en el bucket de Amazon S3 `aws-eifa-teatro`.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+- Node.js instalado. Se recomienda una versión LTS compatible con Create React App.
+- npm, incluido con Node.js.
+- Acceso al repositorio y permisos para leer el bucket `aws-eifa-teatro` en AWS.
+- Acceso a la consola de AWS para cargar archivos manualmente.
 
-### `npm start`
+Para comprobar las versiones instaladas:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+node --version
+npm --version
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalación local
 
-### `npm test`
+Desde la carpeta raíz del proyecto, donde se encuentra `package.json`, instalar las dependencias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+Las dependencias quedan instaladas en `node_modules/`. Esta carpeta no se sube a AWS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Levantar el proyecto en desarrollo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ejecutar:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+Luego abrir [http://localhost:3000](http://localhost:3000). El servidor se actualiza automáticamente al modificar el código.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para detenerlo, presionar `Ctrl + C` en la terminal.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Comandos disponibles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Comando | Uso |
+| --- | --- |
+| `npm start` | Ejecuta el sitio en modo desarrollo. |
+| `npm run build` | Genera la versión optimizada para producción en `build/`. |
+| `npm test` | Ejecuta las pruebas configuradas por Create React App. |
+| `npm run eject` | Expone la configuración interna de Create React App. No es necesario para el mantenimiento normal. |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Estructura principal
 
-## Learn More
+```text
+public/                  Archivos públicos y recursos estáticos.
+public/assets/           Imágenes, logos y material usado por el sitio.
+src/EifaTeatroApp.js     Enrutamiento principal de la aplicación.
+src/visitorUser/         Pantallas y componentes visibles para visitantes.
+src/index.js             Punto de entrada de React.
+src/index.css            Estilos globales.
+build/                   Resultado de producción; se crea al ejecutar npm run build.
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Las rutas actualmente configuradas son:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `/`
+- `/teatro-musical`
+- `/eifa-kids`
+- `/casas`
+- `/contacto`
+- `/galeria`
 
-### Code Splitting
+## Crear una compilación de producción
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Antes de publicar cambios:
 
-### Analyzing the Bundle Size
+1. Descargar o actualizar el código fuente.
+2. Ejecutar `npm install` si cambiaron las dependencias o no existe `node_modules/`.
+3. Ejecutar:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm run build
+   ```
 
-### Making a Progressive Web App
+4. Confirmar que se creó la carpeta `build/` y que contiene `index.html`, `asset-manifest.json`, `static/` y los recursos públicos necesarios.
+5. Probar la versión compilada antes de subirla. Como mínimo, revisar el sitio local con `npm start` y navegar por todas las rutas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+La carpeta que se publica es `build/`, no la carpeta raíz del proyecto. No subir `src/`, `node_modules/`, `package.json` ni el repositorio completo al bucket.
 
-### Advanced Configuration
+## Publicación manual en Amazon S3
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+El destino de publicación es el bucket:
 
-### Deployment
+```text
+aws-eifa-teatro
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+La subida es manual desde la consola de AWS. No es necesario instalar AWS CLI ni configurar un pipeline de despliegue para este proyecto.
 
-### `npm run build` fails to minify
+### Cargar una nueva versión
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Entrar a la [Consola de AWS](https://console.aws.amazon.com/).
+2. Abrir el servicio **S3** y seleccionar el bucket `aws-eifa-teatro`.
+3. Abrir la pestaña **Objects**.
+4. Seleccionar **Upload**.
+5. En el explorador de archivos, abrir la carpeta `build/` generada en el paso anterior.
+6. Seleccionar y cargar **el contenido de `build/`**, conservando su estructura de carpetas. El archivo `index.html` debe quedar en la raíz del bucket, no dentro de una carpeta `build`.
+7. Confirmar la carga y esperar a que todos los archivos terminen correctamente.
+8. Abrir la URL configurada para el sitio y verificar que carga el inicio, las imágenes, los estilos y cada una de las rutas.
+
+Al publicar una versión nueva, reemplazar los archivos existentes cuando AWS lo solicite. No borrar archivos manualmente antes de la carga salvo que exista una instrucción específica, porque una eliminación previa puede dejar el sitio incompleto si la carga se interrumpe.
+
+## Lista de verificación después de publicar
+
+- [ ] `index.html` está en la raíz del bucket.
+- [ ] La carpeta `static/` y los archivos de `build/` se cargaron completos.
+- [ ] La portada abre sin errores.
+- [ ] Las imágenes, logos, estilos y fuentes se muestran correctamente.
+- [ ] Los enlaces a `/teatro-musical`, `/eifa-kids`, `/casas`, `/contacto` y `/galeria` funcionan.
+- [ ] Al actualizar una ruta interna no aparece un 404.
+- [ ] Se revisó la consola del navegador para detectar errores de archivos faltantes.
+
+## Solución de problemas
+
+### `npm install` falla
+
+Verificar que Node.js y npm estén instalados, cerrar procesos de desarrollo activos y volver a ejecutar `npm install` desde la raíz del proyecto.
+
+### `npm run build` falla
+
+Revisar el error mostrado en la terminal. Normalmente indica un error de JavaScript, una importación incorrecta o un recurso faltante. Corregir el código y volver a ejecutar la compilación antes de publicar.
+
+### El sitio carga, pero no aparecen imágenes
+
+Confirmar que se cargó todo el contenido de `build/`, incluyendo las carpetas de recursos, y que las rutas distinguen correctamente entre mayúsculas y minúsculas.
+
+### La portada abre, pero una ruta interna devuelve 404
+
+Revisar la configuración de documento de error del sitio estático S3. Debe apuntar a `index.html`. Si se utiliza CloudFront, verificar también la respuesta de error personalizada y limpiar la caché después de cambiar la configuración.
+
+## Buenas prácticas de mantenimiento
+
+- Trabajar siempre desde una rama o copia controlada del repositorio.
+- Probar los cambios localmente antes de crear la compilación.
+- Publicar únicamente una compilación nueva y verificada de `build/`.
+- No guardar credenciales de AWS, claves API ni archivos `.env` dentro del repositorio.
+- Registrar la fecha de publicación y los cambios realizados para facilitar la reversión manual si fuera necesario.
+
+## Versionamiento independiente
+
+No es obligatorio trabajar sobre la misma rama de GitHub de este proyecto. Si se desea, el equipo encargado puede mantener su propio versionamiento utilizando un repositorio independiente, sus propias ramas y la estrategia de control de cambios que prefiera.
+
+Lo importante para la publicación es que la versión seleccionada haya sido probada, se ejecute `npm run build` correctamente y se cargue el contenido generado dentro de `build/` al bucket `aws-eifa-teatro`. Se recomienda conservar una referencia de la versión publicada, por ejemplo mediante un tag, un commit o un registro interno de despliegues.
